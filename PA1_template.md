@@ -2,8 +2,8 @@
 
 
 
-## Load and process the data
-##### 1. Load the data 
+## Loading and preprocessing the data
+
 
 ```{r, echo=FALSE, results='hide', warning=FALSE, message=FALSE}
 library(ggplot2)
@@ -13,15 +13,10 @@ library(Hmisc)
 
 
 ```{r, results='markup'}
+
 activityData <- read.csv('activity.csv')
 ```
-##### 2. transform interval data
 
-```{r}
-#activityData$interval <- strptime(gsub("([0-9]{1,2})([0-9]{2})", "\\1:\\2", activityData$interval), format='%H:%M')
-```
-
------
 
 ## mean total number of steps taken per day.
 
